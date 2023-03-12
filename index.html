@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Vitor Mends</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo"><a href="">VITOR MENDS</a></div>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="musicas.html">MUSICAS</a></li>
+                    <li><a href="videos.html">VIDEOS</a></li>
+                    <li><a href="imagens.html">IMAGENS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="container">
+                <div class="banner-imagem">
+                    <img src="imagens/eu2.png" alt="">
+                </div>
+                <div class="banner-info">
+                    <h1>Olá, eu sou</h1>
+                    <h1>VITOR MENDS</h1>
+                    <p>//    PRODUTOR MUSICAL</p>
+                    <p>//    WEB DESIGN</p>
+                    <p>//    EDITOR DE VIDEO</p>
+                    <!-- <h2 id="nome">PRODUTOR MUSICAL</h2> -->
+                </div>
+            </div>
+        </section>
+        <section class="social">
+            <div class="container">
+
+                    <h2>REDE SOCIAIS</h2>
+                    <ul>
+                        <li><a href="https://www.instagram.com/vitormendsmusic/" title="Instagram">
+                            <i class="fa-brands fa-instagram fa-lg"></i>
+                        </a></li>
+                        <li><a href="https://open.spotify.com/artist/0mkVPjiBwZeU8CmOjyKTor?si=vH0RluKuQzStdDZXzcqWKw" title="Spotify">
+                            <i class="fa-brands fa-spotify fa-lg"></i>
+
+                        </a></li>
+                        <li><a href="https://www.youtube.com/channel/UConsOlW7E_Ck27wyXWINWig" title="Youtube">
+                            <i class="fa-brands fa-youtube fa-lg"></i>
+
+                        </a></li>
+                        <li><a href="https://soundcloud.com/vitormends" title="Soundclound">
+                            <i class="fa-brands fa-soundcloud fa-lg"></i>
+
+                        </a></li>
+                    </ul>
+            </div>
+        </section>
+        <section class="formulario">
+            <h2>DEIXA SUA MENSAGEM</h2>
+            <form method="post" action="mailto:contato.vitormends@gmail.com" enctype="text/plain">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+        
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2023 por Vitor Mendes.</p>
+    </footer>
+
+    <script>
+
+        /* ------------- banner h1 ----------- */
+        // array de nomes
+        const nomes = ["WEB DESIGN", "EDITOR DE VÍDEO","PRODUTOR MUSICAL"];
+        let index = 0;
+        const nomeElement = document.getElementById("nome");
+        
+        // atualiza o nome a cada 2 segundos
+        setInterval(() => {
+            nomeElement.style.animation = "nome 1s ease-in-out forwards";
+            nomeElement.textContent = nomes[index];
+            index = (index + 1) % nomes.length;
+            }, 2000);
+      </script>
+</body>
+</html>

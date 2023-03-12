@@ -1,0 +1,118 @@
+@media (max-width: 768px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .container nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo {
+        padding: 1.5rem 0 1em;
+    }
+
+    .banner-info {
+        font-size: 1em;
+        padding: 0;
+    }
+
+    .banner-info h1:nth-child(1) {
+        font-size: 1rem;
+    }
+
+    .banner-info h1:nth-child(2) {
+        font-size: 1.7rem;
+    }
+
+    .banner-info p {
+        font-size: 0.7rem;
+    }
+
+    /* ------ MAIN ------*/
+
+    main {
+        margin-top: 115px;
+    }
+   
+
+    /* ------- MUSIC ------- */
+    .music-card {
+        max-width: 100%;
+        flex: 100%;
+
+    }
+
+    /* -------- VIDEO --------- */
+    .video-card {
+        width: 100%;
+    }
+
+    /* -------- IMAGEM --------- */
+    .imagem-card {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+ 
+
+}
+
+
+@media (max-width: 580px) {
+
+    body {
+        font-size: 12px;
+    }
+
+    .banner .container {
+        flex-direction: column;
+    }
+
+     /* --- banner --- */
+
+    .banner-imagem {
+        max-width: 100%;
+        flex: 100%;
+    }
+
+    .banner-info {
+        max-width: 100%;
+        flex: 100%;
+        margin-top: 2rem;
+    }
+
+    .banner-info h1:nth-child(2) {
+        margin-bottom: 2rem;
+    }
+
+
+    /* --- social --- */
+
+    .social ul {
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .social ul li a {
+        flex-direction: column;
+
+    }
+
+    .responsive-iframe {
+        height: 170px;
+    }
+
+    /* --- music --- */
+
+    .container-cards {
+        gap: 2.5rem;
+    }
+    
+    .music-card {
+        padding: 0.7em;
+    }
+
+}
